@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK BOOTSTRAP-->
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- link tipografia-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:ital,wght@0,400;0,900;1,600&display=swap" rel="stylesheet">
+    <title>CHAMAMA - CONTACTO</title>
+</head>
+<body>
+    <header id="up" class="container-fluid header">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="../img/cha.jpeg" alt="logo">
+            </div>
+            <div class="col-md-6 titulos d-grid align-self-center justify-content-center">
+                <h1>CHAMAMA</h1>
+                <h2>Diseño Sustentable</h2>
+            </div>
+        </div>
+        <!--menu navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">CHA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav  navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="productos.html">Carteras/Mochilas</a></li>
+                                <li><a class="dropdown-item" href="productos.html">Billeteras/Tabaqueras</a></li>
+                                <li><a class="dropdown-item" href="productos.html">Riñoneras/Morrales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="comotrabajamos.html">CÓMO TRABAJAMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comprasostenible.html">COMPRA SOSTENIBLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form id="form">
+            <fieldset class="container formulario">
+                <legend class="row">COMPLETA EL FORMULARIO Y NOS COMUNICAREMOS A LA BREVEDAD</legend>
+                <div class="form-group row">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="disabledTextInput" class="form-control" name="nombre" required>
+                </div>
+                <div class="form-group row">
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="disabledSelect" class="form-control" name="nacimiento" required>
+                    </input>
+                </div>
+                <div class="form-group row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="disabledTextInputE" class="form-control" name="email" required>
+                </div>
+                <div class="form-group row">
+                    <label  for="text">Mensaje</label>
+                    <input class="msg" type="text" id="disabledTextInputM" class="form-control " name="mensaje" required>
+                </div>
+                
+                <div class="row button">
+                    <button type="submit" class="btn boton send btn-outline-secondary col-md-2 m-3 img-fluid" value="Enviar">Enviar</button>
+                    
+                </div> 
+            </fieldset>
+        </form>
+
+
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/chamama.mdz/?hl=es-la" role="button" target="blank"><img class="fab fa-instagram" width=30px src="../img/IconIG.png" alt="iconoIg">INSTAGRAM</a>
+
+                <!-- Subir -->
+                <a class="btn btn-outline-light btn-floating" href="#up" role="button"><img class="fab fa-subir"  width=30px
+                        src="../img/IconoUp.png" alt="iconoIg">ARRIBA</a>
+            </section>   
+        </div>
+        <!-- Grid container -->
+        <!-- Autor -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p>Diseño y producción de Sofía García</p>
+        </div>
+    </footer>
+    <!--LINK JS-->
+    <script src="../js/form.js"> </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK BOOTSTRAP-->
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- link tipografia-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:ital,wght@0,400;0,900;1,600&display=swap" rel="stylesheet">
+   
+    <title>CHAMAMA - PRODUCTOS</title>
+</head>
+<body>
+    <header id="up" class="container-fluid header">
+        <h2>PRODUCTOS</h2>
+
+        <!--menu navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">CHA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav  navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="productos.html">Carteras/Mochilas</a></li>
+                                <li><a class="dropdown-item" href="productos.html">Billeteras/Tabaqueras</a></li>
+                                <li><a class="dropdown-item" href="productos.html">Riñoneras/Morrales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="comotrabajamos.html">CÓMO TRABAJAMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comprasostenible.html">COMPRA SOSTENIBLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button id="carritoCompras"><img class="fas fa-comprar" src="../img/comprar.png"></img><span id="contador">0</span></button>
+    </header>
+    <main id="todoProductos" class="container">
+        
+        
+        
+        
+        <div class="modalContenedor">
+            <div class="modalCarrito">
+                <h3>CARRITO</h3>
+                <button id="cerrarCarrito"><i class="fas fa-times-circle"></i></button>
+                <div id="carritoContenedor">
+
+                </div>
+                <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
+                <button id="vaciarCarrito"class="botonQuitar">Vaciar Carrito</button>
+                <button id="finalCompra"class="finComprar">Finalizar Compra</button>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/chamama.mdz/?hl=es-la" role="button" target="blank"><img class="fab fa-instagram" width=30px src="../img/IconIG.png" alt="iconoIg">INSTAGRAM
+                </a>
+    
+                <!-- Subir -->
+                <a class="btn btn-outline-light btn-floating" href="#up" role="button"><img class="fab fa-subir"  width=30px
+                           src="../img/IconoUp.png" alt="iconoIg">ARRIBA
+                </a>    
+            </section>                    
+        </div>
+            <!-- Grid container -->
+            <!-- Autor -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p>Diseño y producción de Sofía García</p>
+        </div>
+
+    <!--LINK JS-->
+    
+    <script src="https://kit.fontawesome.com/df59baf6b8.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.15/dist/sweetalert2.all.min.js"></script>
+    <!--<script src="../js/stock.js"> </script>-->
+    <script src="../js/modal.js"> </script>
+    <script src="../js/script.js"> </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+[
+    {
+        "id":"1", 
+        "nombre":"Bandolera",
+        "precio":2500, 
+        "stock": 30, 
+        "cantidad":1, 
+        "img": "../img/bandolera.png"
+    },
+    {
+        "id":"2", 
+        "nombre":"Riñonera L",
+        "precio":2000, 
+        "stock": 20, 
+        "cantidad":1, 
+        "img": "../img/Riñonera.png"
+    } ,
+    {
+        "id":"3", 
+        "nombre":"Bolsotote",
+        "precio":3500, 
+        "stock": 15, 
+        "cantidad":1, 
+        "img": "../img/BolsoBlackout.png"
+    } ,
+    {
+        "id":"4", 
+        "nombre":"Billetera S",
+        "precio":900, 
+        "stock": 10, 
+        "cantidad":1, 
+        "img": "../img/BilleteraBlackoutChica.png"
+    },
+    {
+        "id":"5", 
+        "nombre":"Billetera L",
+        "precio":1100, 
+        "stock": 10, 
+        "cantidad":1, 
+        "img": "../img/BilleteraBlackoutGrande.png"
+    },
+    {
+        "id":"6", 
+        "nombre":"Mochila",
+        "precio":4500, 
+        "stock": 5, 
+        "cantidad":1, 
+        "img": "../img/mochila.png"
+    },
+    {
+        "id":"7", 
+        "nombre":"Riñonera S",
+        "precio":1500, 
+        "stock": 20, 
+        "cantidad":1, 
+        "img": "../img/riñonera3.png"
+    },
+    {
+        "id":"8", 
+        "nombre":"Tabaquera",
+        "precio":1800, 
+        "stock": 15, 
+        "cantidad":1, 
+        "img": "../img/TabaqueraCamara.png"
+    }
+]

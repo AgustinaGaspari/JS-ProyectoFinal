@@ -1,0 +1,185 @@
+.titulos{
+    font-family: 'Anton', sans-serif;
+}
+.nav-link{
+    font-size: 1.25rem;
+}
+h1{
+    font-size: 8rem;
+    font-family: 'Anton', sans-serif;
+}
+h2{
+    text-align: center;
+}
+.frase {
+    font-family: 'Anton', sans-serif;
+    font-style:italic ;
+    font-size: 1.5rem;
+}
+.text-center {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.tituloPrincipal{
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    padding: 1rem;
+    background-image: linear-gradient(gray,white);
+}
+.carousel-control-prev-icon {
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+/*NUEVO CSS*/
+
+#carritoCompras {
+    border: none;
+    color: rgb(0, 3, 12);
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#carritoCompras:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(66, 123, 159);
+}
+#carritoCompras:focus {
+    outline: none;
+}
+
+#todoProductos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.precioProducto {
+    font-weight: 700;
+}
+.botonAgregar {
+    background-color: rgb(37, 44, 65);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+}
+.botonAgregar:hover {
+    cursor: pointer;
+}
+.botonAgregar:focus {
+    outline: none;
+}
+
+.modalContenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalCarrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modalCarrito {
+    margin-top: 0;
+}
+
+.modalCarrito h3 {
+    color: rgb(12, 12, 12);
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 5px;
+}
+.modalCarrito #cerrarCarrito {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    font-size: 20px;
+    color: red;
+    border: none;
+    background-color: white;
+    
+}
+.modalCarrito #cerrarCarrito:hover {
+    cursor: pointer;
+    
+}
+.modalCarrito #cerrarCarrito:focus {
+    outline: none;
+}
+.modalCarrito .precioProducto {
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.modalCarrito #carritoContenedor .productoAgregado{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 5px solid rgb(6, 14, 16);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonQuitar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 15px;
+}
+
+.botonQuitar:hover {
+    cursor: pointer;
+}
+
+.finComprar {
+    background-color: white;
+    color: green;
+    text-align:right;
+    border: none;
+    font-size: 15px;
+}
+.finComprar:hover {
+    cursor: pointer;
+}
