@@ -2,7 +2,7 @@
 // EVENTO-1
 
 let formulario = document.getElementById('form')
-let arrayForm = []
+let arrayForm = JSON.parse(localStorage.getItem('arrayForm')) ?? []
 
 formulario.addEventListener('submit', (event)=>{
     event.preventDefault()
@@ -14,11 +14,6 @@ formulario.addEventListener('submit', (event)=>{
     
     arrayForm.push({name:name, date:date, email:email, message:message})
     console.log(arrayForm)
+    localStorage.setItem('formulario',JSON.stringify(arrayForm));
     formulario.reset()
 })
-
-let div = document.createElement("div");
-
-div.innerHTML = "<p>* Horario de servicio de atención al cliente: Lunes a Sábados de 10 a 20 hs.<p>";
-
-document.body.append(div);

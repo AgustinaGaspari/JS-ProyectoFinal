@@ -48,6 +48,8 @@ fetch("../stock.json")
                 Swal.fire({
                     icon:'success',
                     text:'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer:2000,
                 }) 
                 agregarCarrito(producto.id)
             })
