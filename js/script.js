@@ -13,7 +13,6 @@ const contador= document.getElementById('contador')
 const precioTotal= document.getElementById('precioTotal')
 
 
-
 //Array
 
 let carrito = [];
@@ -117,6 +116,7 @@ fetch("../stock.json")
                     text: '¿Está seguro de continuar?',
                     icon: 'warning',
                     confirmButtonText: 'Sí',
+            
                 })
                 carritoLS.length = 0;
                 actualizar();
@@ -126,6 +126,8 @@ fetch("../stock.json")
                     text: '¿Desea agregar productos?',
                     icon: 'error',
                     confirmButtonText: 'Sí',
+                    showCancelButton:true,
+                    cancelButtonText: 'No',
                 })
             }
         })
@@ -136,7 +138,9 @@ fetch("../stock.json")
                 title:'Mis compras',
                 text: 'Compra finalizada con éxito',
                 icon: 'success',
-                confirmButtonText: 'OK',
+                timer:1500,
+                showConfirmButton:false,
+
                 })
                 carritoLS.length = 0;
                 actualizar();
@@ -146,6 +150,8 @@ fetch("../stock.json")
                     text: '¿Desea agregar productos?',
                     icon: 'error',
                     confirmButtonText: 'Sí',
+                    showCancelButton:true,
+                    cancelButtonText: 'No',
                 })
             }
         })
